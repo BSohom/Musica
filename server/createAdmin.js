@@ -5,10 +5,10 @@ const User = require('./models/User'); // adjust if your path is different
 
 mongoose.connect(process.env.MONGO_URI)
   .then(async () => {
-    const hashedPassword = await bcrypt.hash(`${ADMIN_PW}`, 10);
+    const hashedPassword = await bcrypt.hash(process.env.ADMIN_PW, 10);
     await User.create({
       name: 'Admin',
-      email: `${ADMIN_GMAIL}`,
+      email: process.env.ADMIN_GMAIL,
       password: hashedPassword,
       isAdmin: true,
     });
