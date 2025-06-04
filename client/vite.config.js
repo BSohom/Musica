@@ -15,7 +15,7 @@ export default {
   },
   server: {
     proxy: {
-      '/api': 'https://musica-server-rzrh.onrender.com', // assuming backend runs on port 5000
+      '/api': 'https://musica-server-bsohom.onrender.com', // assuming backend runs on port 5000
     },
   },
 };
