@@ -165,7 +165,7 @@ export default function ArtistAlbumsWithDetails({
                 <div
                   key={album.id}
                   onClick={() => handleAlbumClick(album)}
-                  className="min-w-[192px] bg-zinc-900 rounded-xl p-4 mb-12 cursor-pointer hover:scale-105 hover:shadow-lg transition-transform text-center"
+                  className="min-w-[192px] bg-zinc-900 rounded-xl p-4 pb-12 cursor-pointer hover:scale-105 hover:shadow-lg transition-transform text-center"
                 >
                   <img
                     src={album.images?.[0]?.url}
